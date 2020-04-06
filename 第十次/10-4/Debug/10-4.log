@@ -1,0 +1,24 @@
+﻿  Date.cpp
+D:\C++\第十次\10-4\Student.h(12,53): error C2061: 語法錯誤: 識別項 'Date'
+D:\C++\第十次\10-4\Student.h(18,14): error C3646: 'getDate': 未知的覆寫規範
+D:\C++\第十次\10-4\Student.h(18,14): error C2059: 語法錯誤: '('
+D:\C++\第十次\10-4\Student.h(18,22): error C2238: 在 ';' 之前有未預期的語彙基元
+D:\C++\第十次\10-4\Student.h(29,7): error C2143: 語法錯誤: 遺漏 ';' (在 '*' 之前)
+D:\C++\第十次\10-4\Student.h(29,7): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+D:\C++\第十次\10-4\Student.h(29,16): error C2238: 在 ';' 之前有未預期的語彙基元
+  Main.cpp
+D:\C++\第十次\10-4\Student.h(12,53): error C2061: 語法錯誤: 識別項 'Date'
+D:\C++\第十次\10-4\Student.h(18,14): error C3646: 'getDate': 未知的覆寫規範
+D:\C++\第十次\10-4\Student.h(18,14): error C2059: 語法錯誤: '('
+D:\C++\第十次\10-4\Student.h(18,22): error C2238: 在 ';' 之前有未預期的語彙基元
+D:\C++\第十次\10-4\Student.h(29,7): error C2143: 語法錯誤: 遺漏 ';' (在 '*' 之前)
+D:\C++\第十次\10-4\Student.h(29,7): error C4430: 遺漏類型規範 - 假設為 int。注意: C++ 不支援 default-int
+D:\C++\第十次\10-4\Student.h(29,16): error C2238: 在 ';' 之前有未預期的語彙基元
+D:\C++\第十次\10-4\Main.cpp(13,38): error C2661: 'Student::Student': 多載函式不使用 3 引數
+D:\C++\第十次\10-4\Main.cpp(14,39): error C2661: 'Student::Student': 多載函式不使用 3 引數
+  Student.cpp
+D:\C++\第十次\10-4\Student.cpp(6,20): error C2440: '=': 無法由 'Date' 轉換為 'Date *'
+D:\C++\第十次\10-4\Student.cpp(6,13): message : 沒有可以執行此轉換的使用者定義轉換運算子或無法呼叫運算子
+D:\C++\第十次\10-4\Student.cpp(23,17): error C2440: 'return': 無法由 'Date *const ' 轉換為 'Date'
+D:\C++\第十次\10-4\Student.cpp(23,17): message : 沒有可以取得來源類型的建構函式，或建構函式多載解析模稜兩可
+  正在產生程式碼...
