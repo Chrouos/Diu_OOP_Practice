@@ -19,7 +19,7 @@ void Student::setDate(int newMonth, int newDay, int newYear) {
 	birthDay.setDay(newDay);
 	birthDay.setYear(newYear);
 }
-Date Student::getDate() const {
+Date Student::getDate() {
 	return birthDay;
 }
 

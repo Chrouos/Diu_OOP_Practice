@@ -15,7 +15,7 @@ public:
 	string getName() const;
 
 	void setDate(int newMonth, int newDay, int newYear);
-	Date getDate() const;
+	Date getDate() ;
 
 	void setScore(int newScore);
 	int getScore() const;
@@ -26,7 +26,7 @@ public:
 private:
 	
 	string name;
-	Date *birthDay;
+	Date birthDay;
 	int score;
 
 };
