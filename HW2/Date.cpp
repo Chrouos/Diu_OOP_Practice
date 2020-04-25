@@ -31,6 +31,8 @@ int Date::getYear() const {
 	return year;
 }
 
-/*void Date::print() {
+/* ¿é¥X
+void Date::print() {
 	cout << month << "/" << day << "/" << year;
-}*/
+}
+*/

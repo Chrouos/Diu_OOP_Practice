@@ -1,5 +1,5 @@
-#include"StuCard.h"
 #include<iostream>
+#include"StuCard.h"
 double* classAver(StuCard[], int);
 
 int main() {
@@ -27,23 +27,43 @@ int main() {
 	string name;
 	int sex, mon, day, year;
 	double scoreArray[3];
-
 	cin >> name >> sex >> scoreArray[0] >> scoreArray[1] >> scoreArray[2] >> mon >> day >> year;
+
+	//方法一
 	StuCard temp(name, sex, scoreArray, Date(mon, day, year));
 	stuArray[4] = temp;
+
+	/*方法二
+
+	Date birth(mon, day, year);
+	stuArray[4].setName(name);
+	stuArray[4].setSex(sex);
+	stuArray[4].setScore(3, scoreArray);
+	stuArray[4].setDate(birth);
+
+	以上註解為同樣事情
+	*/
+
 
 	//輸出五次
 	for (int i = 0; i < 5; i++) {
 		stuArray[i].printCard();
 	}
-	double *p = classAver(stuArray, 0);
-	//cout << "Average: " << *classAver(stuArray, 0) << ", " << *classAver(stuArray, 1) << ", " << *classAver(stuArray, 2);
+
+	//classAver 方法一
+	double* p = classAver(stuArray, 3);
 	cout << "Average: " << *(p + 0) << ", " << *(p + 1) << ", " << *(p + 2);
+
+	/*classAver 方法二
+	cout << "Average: " << *classAver(stuArray, 0) << ", " << *classAver(stuArray, 1) << ", " << *classAver(stuArray, 2);
+	*/
 
 	system("pause");
 	return 0;
+
 }
 
+// classAver 方法一
 double* classAver(StuCard stuArray[], int n) {
 	static double average[3];
 
@@ -56,3 +76,19 @@ double* classAver(StuCard stuArray[], int n) {
 
 	return average;
 }
+
+/* classAver 方法二
+
+double* classAver(StuCard stuArray[], int n) {
+	double* average = new double();
+	double temp = 0;
+
+	for (int i = 0; i < 5; i++) {
+		temp += stuArray[i].getScore(n);
+	}
+
+	*average = temp / 5;
+	return average;
+}
+
+*/

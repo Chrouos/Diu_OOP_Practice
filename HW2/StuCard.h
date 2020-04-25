@@ -3,7 +3,6 @@
 
 #include"Date.h"
 
-
 class StuCard
 {
 public:
@@ -22,7 +21,7 @@ public:
 	Date getDate() const;
 
 	//計算三科平均
-	double average();
+	double average() const;
 
 	//計算年紀 今年為2020
 	int getAge(int thisYear) const;
@@ -36,8 +35,7 @@ private:
 	string name;
 	bool sex;
 	double scoreAry[3];
-	Date birthDay;
-
+	Date birthday;
 
 };
 
