@@ -12,6 +12,16 @@ StuCard::StuCard(string name, bool sex, double scoreAry[], Date birthDay) {
 	setScore(size, scoreAry);
 	setDate(birthDay);
 }
+StuCard::StuCard(string name, bool sex, double score1, double score2, double score3, Date birthDay) {
+	setName(name);
+	setSex(sex);
+	setDate(birthDay);
+
+	//將成績一個一個輸進去
+	scoreAry[0] = score1;
+	scoreAry[1] = score2;
+	scoreAry[2] = score3;
+}
 
 void StuCard::setName(string newName) {
 	name = newName;
@@ -20,7 +30,7 @@ void StuCard::setSex(bool newSex) {
 	sex = newSex;
 }
 void StuCard::setScore(int size, double newScoreAry[]) {
-	//一個一個輸進去
+	//利用for迴圈，一個一個輸進去
 	for (int i = 0; i < size; i++) {
 		scoreAry[i] = newScoreAry[i];
 	}

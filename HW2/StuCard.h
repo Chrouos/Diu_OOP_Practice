@@ -9,6 +9,8 @@ public:
 
 	StuCard();
 	StuCard(string name, bool sex, double scoreAry[], Date birthDay);
+	//也可這麼寫， 不使用陣列，一個一個輸進去
+	StuCard(string name, bool sex, double score1, double score2, double score3, Date birthDay);
 
 	void setName(string newName);
 	void setSex(bool newSex);
