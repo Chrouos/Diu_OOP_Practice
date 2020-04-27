@@ -29,11 +29,11 @@ int main() {
 	double scoreArray[3];
 	cin >> name >> sex >> scoreArray[0] >> scoreArray[1] >> scoreArray[2] >> mon >> day >> year;
 
-	//方法一
+	//輸入 方法一
 	StuCard temp(name, sex, scoreArray, Date(mon, day, year));
 	stuArray[4] = temp;
 
-	/*方法二
+	/*輸入 方法二
 
 	Date birth(mon, day, year);
 	stuArray[4].setName(name);
