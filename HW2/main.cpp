@@ -6,7 +6,7 @@ int main() {
 
 	StuCard stuArray[5];
 
-	//先輸入四個人
+	//StuCard陣列 方法一 先輸入四個人
 	double ScoreArray0[3] = { 80.0, 70.0, 90.0 };
 	StuCard temp0("Jerry", 1, ScoreArray0, Date(3, 20, 1997));
 	stuArray[0] = temp0;
@@ -22,6 +22,19 @@ int main() {
 	double ScoreArray3[3] = { 73.0, 95.0, 67.0 };
 	StuCard temp3("Tom", 1, ScoreArray3, Date(11, 8, 2003));
 	stuArray[3] = temp3;
+
+	/* StuCard陣列 方法二
+	StuCard s1("Jerry", 1, 80.0, 70.0, 90.0, Date(3, 20, 1997));
+	StuCard s2("John", 1, 85.0, 77.0, 95.0, Date(5, 20, 1995));
+	StuCard s3("Mary", 0, 83.0, 75.0, 70.0, Date(2, 18, 2007));
+	StuCard s4("Tom", 1, 73.0, 95.0, 67.0, Date(11, 8, 2003));
+
+	cin >> name >> sex >> score1 >> score2 >> score3 >> mon >> day >> year;
+	StuCard s5(name, sex, score1, score2, score3, Date(mon, day, year));
+
+	StuCard sArray[5]={s1, s2, s3, s4, s5};
+
+	*/
 
 	//輸入名字，性別，成績[3]，月日年
 	string name;
