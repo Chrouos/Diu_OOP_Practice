@@ -76,7 +76,7 @@ int main() {
 
 }
 
-// classAver 方法一
+// classAver 方法一 抄得不要寫這個
 double* classAver(StuCard stuArray[], int n) {
 	static double average[3];
 
