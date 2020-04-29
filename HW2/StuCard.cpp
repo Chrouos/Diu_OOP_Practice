@@ -5,6 +5,7 @@ StuCard::StuCard() {
 	sex = 1;
 	birthday = Date(1, 1, 2000);
 }
+
 StuCard::StuCard(string name, bool sex, double scoreAry[], Date birthDay) {
 	int size = 3;
 	setName(name);

@@ -105,3 +105,4 @@ double* classAver(StuCard stuArray[], int n) {
 }
 
 */
+
