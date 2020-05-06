@@ -13,7 +13,7 @@ double stuAve(vector<double> score) {
 }
 
 //計算各科平均
-double* coreseAve(vector<vector<double>> score, int n) {
+double* courseAve(vector<vector<double>> score, int n) {
 	double *average = new double();
 	double temp = 0;
 	for (int i = 0; i < 5; i++) {
@@ -34,12 +34,12 @@ int main() {
 	
 	for (int i = 0; i < 5; i++) {
 		for (int j = 0; j < 3; j++) {
-			cout << fixed << setprecision(1) << score[i][j] << " "; //輸出
+			cout << fixed << setprecision(1) << score[i][j] << ", "; //輸出
 		}
 		cout << stuAve(score[i]) << endl; //平均＋換行
 	}
 
-	cout << "Average: " << *coreseAve(score, 0) << ", " << *coreseAve(score, 1) << ", " << *coreseAve(score, 2) << endl;
+	cout << "Average: " << *courseAve(score, 0) << ", " << *courseAve(score, 1) << ", " << *courseAve(score, 2) << endl;
 
 	system("pause");
 	return 0;
