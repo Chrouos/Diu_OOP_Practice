@@ -57,7 +57,7 @@ istream& operator>> (istream& in, Complex comp) {
 }
 
 int Complex::operator[](int index) {
-	if (index = 0)
+	if (index == 0)
 		return a;
 	else
 		return b;
