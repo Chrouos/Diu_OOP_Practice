@@ -18,6 +18,7 @@ public:
 	void setName(string newName);
 	void setSex(bool newSex);
 	void setScore(int index, double newScore);
+	void setScore(double newScoreAry[3]);
 
 	string getName();
 	bool getSex();
