@@ -1,4 +1,4 @@
-class Date:
+class Date():
     def __init__(self, month, day, year):
         self.__month = month
         self.__day = day
@@ -19,4 +19,4 @@ class Date:
         return self.__year
 
     def toString(self):
-        return str("{}/{}/{}".format(self.__day, self.__month, self.__year))
+        return str("{}/{}/{}".format(self.__month, self.__day, self.__year))
