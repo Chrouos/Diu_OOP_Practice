@@ -37,6 +37,7 @@ for i in range(3):
 
 
 """
+#利用 index 內建函式進行
 
 # 整數
 print("list1", list1)

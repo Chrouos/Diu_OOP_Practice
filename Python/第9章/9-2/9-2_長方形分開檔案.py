@@ -1,4 +1,4 @@
-from Rectangle import Rectangle
+from Rectangle_9_2 import Rectangle
 
 w1 = float(input())
 h1 = float(input())
